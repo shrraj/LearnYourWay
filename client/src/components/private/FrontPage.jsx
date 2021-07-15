@@ -6,7 +6,7 @@ import img3 from '../images/img3.png';
 import { Card } from '../Card';
 
 function FrontPage() {
-  window.alert("Use desktop for better experience");
+  // window.alert("Use desktop for better experience");
   return (
     <div className="container-fluid">
       <div className='container-fluid row home'>
