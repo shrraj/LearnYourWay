@@ -5,7 +5,7 @@ const User = require("../models/Users");
 const authenticate = async (req, res, next)=>{
     try{
         const token = req.cookies.eLearning;
-        const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+        const verifyToken = jwt.verify(token, process.env.VALUE);
         const validUser = await User.findOne({_id:verifyToken._id , "tokens.token":token});
         if(!validUser) { throw new Error('User not found') }
         req.token = token;

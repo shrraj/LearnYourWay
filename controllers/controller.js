@@ -63,7 +63,7 @@ module.exports.home = async (req, res) => { res.send(req.validUser); }
 module.exports.dashboard = async (req, res) => {
     try {
         const token = req.cookies.eLearning;
-        const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+        const verifyToken = jwt.verify(token, process.env.VALUE);
         const userInfo = await TestAns.find({ userId: verifyToken._id });
         const testIds = [];
         var c, u, inc;
@@ -87,7 +87,7 @@ module.exports.testAnalysis = async (req, res) => {
     try {
         const tid = req.body.id;
         const token = req.cookies.eLearning;
-        const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+        const verifyToken = jwt.verify(token, process.env.VALUE);
         const ans = await TestAns.findOne({ $and: [{ userId: verifyToken._id }, { TestId: tid }] });
         const correct = ans.correct;
         const incorrect = ans.incorrect;
@@ -115,7 +115,7 @@ module.exports.testans = async (req, res) => {
         const data = req.body;
         console.log(data);
         const token = req.cookies.eLearning;
-        const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+        const verifyToken = jwt.verify(token, process.env.VALUE);
         const testAns = new TestAns({
             TestId: data.TestId + 1,
             userAnswers: data.userAnswers,
@@ -163,7 +163,7 @@ module.exports.result = async (req, res) => {
         const token = req.cookies.eLearning;
         console.log("in");
         console.log(req.body.testId);
-        const verifyToken = jwt.verify(token, process.env.SECRET_KEY);
+        const verifyToken = jwt.verify(token, process.env.VALUE);
         await TestAns.findOne({ $and: [{ userId: verifyToken._id }, { TestId: req.body.testId }] }, async (e, info) => {
             if (e) { console.log(e) };
             if (!info)
