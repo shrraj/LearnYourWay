@@ -79,10 +79,10 @@ function Signin() {
                             onClick={handleSubmit}> SignIn </button><br />
                         <NavLink to='/signup'
                             style={{ textDecoration: "none" }}
-                            className="col-md-12 cen ">Create an account? SignUp</NavLink><br />
+                            className="col-md-12 ">Create an account? SignUp</NavLink><br />
                         <Link to='/forgotPass'
                             style={{ textDecoration: "none" }}
-                            className="col-md-12 cen "
+                            className="col-md-12 "
                             onClick={forPass}>Forgot Password?</Link>
 
                     </div>

@@ -61,7 +61,7 @@ function Signup() {
                         onChange={handleChangePass} value={password} />
                     <button type='submit' className='btn btn-success my-btn btn-md' style={{ marginLeft: '30%' }}
                         onClick={handleSubmit}> SignUp </button> <br />
-                    <NavLink to='/signin' style={{ textDecoration: "none" }} className="col-md-12 cen">Already a user? Signin</NavLink>
+                    <NavLink to='/signin' style={{ textDecoration: "none" }} className="col-md-12 ">Already a user? Signin</NavLink>
                 </div>
             </div>
         </div>
