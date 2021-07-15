@@ -74,15 +74,15 @@ function Signin() {
                             value={password} />
                         <button
                             type='submit'
-                            className='btn btn-success my-btn cen'
+                            className='btn btn-success my-btn cen btn btn-primary btn-md'
                             style={{ marginLeft: '30%' }}
                             onClick={handleSubmit}> SignIn </button><br />
                         <NavLink to='/signup'
                             style={{ textDecoration: "none" }}
-                            className="col-md-12 cen">Create an account? SignUp</NavLink><br />
+                            className="col-md-12 cen ">Create an account? SignUp</NavLink><br />
                         <Link to='/forgotPass'
                             style={{ textDecoration: "none" }}
-                            className="col-md-12 cen"
+                            className="col-md-12 cen "
                             onClick={forPass}>Forgot Password?</Link>
 
                     </div>

@@ -33,7 +33,7 @@ function Dashboard() {
     return (
         <div className="container-fluid">
             <div className='container-fluid home'>
-                <h1 className='cntr'>Analyse your Performance</h1>
+                <h1 className='cntr colr'>Analyse your Performance</h1>
             </div>
             <div className=" container-fluid row " style={{marginTop:"-11rem"}}>
                 {testIds.length !== 0 ?

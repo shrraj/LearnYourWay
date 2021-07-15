@@ -17,10 +17,13 @@ body {
 .btn btn-primary{
      margin-bottom: 10.0rem;
 }
+
+.colr{
+    color:#164086;
+}
  
 .cntr{
     margin-left:35%;
-    color:#164086;
     margin-top:-3%;
     font-weight: bold;
 }
@@ -68,7 +71,8 @@ div {
     font-weight: bold;
     color:#164086;
     padding-bottom: 3%;
-      font-size: 1rem;
+    margin-left: 30%;
+      font-size: 2rem;
       padding-top: 1%;
       font-style: 'AvertaStd,-apple-system,BlinkMacSystemFont,sans-serif';
 }
@@ -104,10 +108,11 @@ h4{
     margin-left: 25%;
 }
 .head{
-    margin-left: 35%;
-    margin-top: -3%;
+    margin-left: 38%;
+    margin-top: 5%;
     margin-bottom: 5%;
     color:#143770;
+    font-weight: bold;
 }
 .img1 {
     width: 100%;

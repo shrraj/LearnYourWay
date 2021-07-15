@@ -13,7 +13,7 @@ function FrontPage() {
         <img src={img3} className='col-md-5'></img>
       </div>
       <div style={{ marginBottom: '10%' }}>
-        <div className='container-fluid ekaur txtCol col-md-6'><h2><strong>Start your Web Development Journey with us.</strong></h2></div>
+        <h1 className='ekaur'><strong>Start your Web Development Journey with us.</strong></h1>
 
         <div className="row">
           <Card title="Prepare For Frontend Development"
