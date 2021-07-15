@@ -74,7 +74,7 @@ function Signin() {
                             value={password} />
                         <button
                             type='submit'
-                            className='btn btn-success my-btn cen btn btn-primary btn-md'
+                            className='btn btn-success my-btn btn btn-primary btn-md'
                             style={{ marginLeft: '30%' }}
                             onClick={handleSubmit}> SignIn </button><br />
                         <NavLink to='/signup'

@@ -73,7 +73,7 @@ function ForgotPass() {
                             value={password} />
                         <button
                             type='submit'
-                            className='btn btn-success my-btn cen btn-md'
+                            className='btn btn-success my-btn btn-md'
                             style={{ marginLeft: '30%' }}
                             onClick={handleSubmit}> Change Password </button><br />
                     </div>
