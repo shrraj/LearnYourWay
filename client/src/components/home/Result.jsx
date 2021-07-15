@@ -37,9 +37,9 @@ function Result() {
     }, []);
 
     return (
-        <div>
+        <div className="container-fluid">
             <h1>Your Score is : {userData.score}</h1>
-            <table className=" ms-4 me-1 table table-bordered">
+            <table className=" ms-1 table table-bordered">
                 <thead className="table-dark">
                     <tr className="col-4">
                         <th className="col-2">Q No</th>

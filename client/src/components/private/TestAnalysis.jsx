@@ -56,7 +56,7 @@ function TestAnalysis() {
             <div className="row">
                 <h1 className=" head col-md-4">Test Analysis</h1>
             </div>
-            <div className="card mb-3 shadow-lg p-3 mb-5 bg-white rounded c1 " style={{ width: "100%" }}>
+            <div className="card mb-3 shadow-lg p-3 mt-5 bg-white rounded c1 " style={{ width: "100%" }}>
                 <div className="row g-0">
                     <div className="col-md-6">
                         <div className="graph">
