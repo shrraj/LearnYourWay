@@ -55,7 +55,7 @@ function Signup() {
                 <div className="form-class" >
                     <img src={img2} alt="..." className='img2' />
                     <h2 className="ms-5 cen">SignUp</h2>
-                    <input type='string' placeholder='username' className=" form-control form-control-lg one col-md-10"
+                    <input type='string' placeholder='username' className="form-control form-control-lg one col-md-10"
                         onChange={handleChangeUsername} value={username} />
                     <input type='password' placeholder='Password' className="form-control form-control-lg one col-md-10"
                         onChange={handleChangePass} value={password} />
