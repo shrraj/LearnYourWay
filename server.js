@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const env= require('dotenv');
 var cookieParser = require('cookie-parser');
 //Dynamic Port for Heroku
-// const PORT = process.env.PORT || 2000;
-const PORT = 2000;
+const PORT = process.env.PORT || 2000;
+// const PORT = 2000;
 
 //Mongoose Schema
 const User = require('./models/Users');
