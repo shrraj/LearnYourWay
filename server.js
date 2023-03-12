@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const env= require('dotenv');
 var cookieParser = require('cookie-parser');
 //Dynamic Port for Heroku
-// const PORT = process.env.PORT || 2000;
-const PORT = 2000;
+const PORT = process.env.PORT || 2000;
+// const PORT = 2000;
 
 //Mongoose Schema
 const User = require('./models/Users');
@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB, {useNewUrlParser:true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false 
-}, (err)=>{
+},(err)=>{
     if(err) return console.log(err);
     console.log('Database connected..');
 });
@@ -31,22 +31,22 @@ app.use(cookieParser());
 app.use(Routes);
 
 // heroku dynamic port
-// if(process.env.NODE_ENV == "production"){
-//     app.use(express.static("client/build"));
-//     const path = require("path");
-//     app.get("*", (req, res)=>{
-//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-//     })
-// }
-
-app.use(express.static("client/build"));
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static("client/build"));
     const path = require("path");
     app.get("*", (req, res)=>{
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     })
+}
+
+// app.use(express.static("client/build"));
+//     const path = require("path");
+//     app.get("*", (req, res)=>{
+//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+//     })
 
 
 
 app.listen(PORT, ()=>{
-    console.log('Connected to Port 2000');
+    console.log('Connected to Port ' + PORT);
 });
